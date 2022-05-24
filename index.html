@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Budget Manager</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Budget Manager</h1>
+        <h2>Income</h2>
+        <form id="incomeForm">
+            <div>
+                <label for="income">Income:</label>
+                <input
+                    type="number"
+                    name="income"
+                    id="income"
+                    value=""
+                    />
+                <input type="submit" value="add" />
+            </form>
+
+            <ul id="incomes">
+                <li></li>
+            </ul>
+
+            <h2>Rent expenses</h2>
+            <form id="rentExpensesForm">
+                <div>
+                    <label for="name">Total:</label>
+                    <input type="number" id="total" name="total">
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="price">Price:</label>
+                    <input
+                        type="number"
+                        name="rentPrice"
+                        id="rentPrice"
+                        value=""
+                        />
+                    <input type="submit" value="add" />
+                </form>
+
+                <ul id="rentExpenses">
+                    <li></li>
+                </ul>
+            </form>
+            <h2>Food expenses</h2>
+            <form id="foodExpensesForm">
+                <div>
+                    <label for="name">Total:</label>
+                    <input type="number" id="total" name="total">
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <label for="foodPrice">Price:</label>
+                <input
+                    type="number"
+                    name="foodPrice"
+                    id="foodPrice"
+                    value=""
+                    />
+                <input type="submit" value="add" />
+            </form>
+
+            <ul id="foodExpenses">
+                <li></li>
+            </ul>
+
+            <h2>Other expenses</h2>
+            <form>
+                <div>
+                    <label for="name">Total:</label>
+                    <input type="number" id="total" name="total">
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price">
+                </div>
+                <button>Add</button>
+                <h2>Total expenses</h2>
+                <form>
+                    <div>
+                        <label for="name">Total expenses:</label>
+                        <input type="number" id="total-expenses"
+                            name="total-expenses">
+                    </div>
+                    <div>
+                        <label for="name">Monthly left:</label>
+                        <input type="number" id="monthly-left"
+                            name="monthly-left">
+                    </div>
+                </form>
+
+
+                <script src="script.js"></script>
+            </body>
+        </html>
